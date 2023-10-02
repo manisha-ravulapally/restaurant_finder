@@ -1,4 +1,5 @@
 const homelist = (req, res) => {
+<<<<<<< HEAD
     res.render('locations-list',
       {
         title: 'Loc8r - find a place to work with wifi',
@@ -98,6 +99,20 @@ const homelist = (req, res) => {
   };
   
   module.exports = {
+=======
+    res.render('locations-list', { title: 'Home' });
+    };
+    /* GET 'Location info' page */
+    const locationInfo = (req, res) => {
+    res.render('location-info', { title: 'Location info' });
+    };
+    /* GET 'Add review' page */
+    const addReview = (req, res) => {
+    res.render('location-review-form', { title: 'Add review' });
+    };
+
+    module.exports = {
+>>>>>>> c5438e3e9ff48c4d1b8fed7efc2a3002f01efd94
     homelist,
     locationInfo,
     addReview

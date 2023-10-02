@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
@@ -6,6 +7,14 @@ const logger = require('morgan');
 const favicon = require('serve-favicon');
 const bodyParser = require('body-parser');
 require('./app_api/models/db');
+=======
+var createError = require('http-errors');
+var express = require('express');
+var path = require('path');
+var cookieParser = require('cookie-parser');
+var logger = require('morgan');
+require('./app_server/models/db');
+>>>>>>> c5438e3e9ff48c4d1b8fed7efc2a3002f01efd94
 
 const indexRouter = require('./app_server/routes/index');
 const apiRouter = require('./app_api/routes/index');
